@@ -1,7 +1,7 @@
 # Introduction
 
 Optimisation is at the heart of many of life's problems.
-It rears its head in problems like price setting, ordering stock, scheduling tasks, hunting for bargains, fleeing the Cave of Wonders and deciding which treasures to pack in into your Knapsack [@Conforti2014, chap. 2; also @Clements1992].
+It rears its head in problems like price setting, ordering stock, scheduling tasks, and distributing power to cities. Even in the story of Aladdin, whilst never explicitly mention fleeing the Cave of Wonders and deciding which treasures to pack in into your Knapsack [@Conforti2014, chap. 2; also @Clements1992].
 
 <!--give example of the lot-sizing problem-->
 The lot-sizing problem is an excellent example of a discrete optimisation problem solved every day. Let us say that a store owner wants to order stock for their products. The question posed in the lot-sizing problem is: how many of each item should we order in order to minimise the total cost from purchasing the products and holding the products. <!--There might be more-->
