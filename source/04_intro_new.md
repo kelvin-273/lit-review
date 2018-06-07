@@ -20,16 +20,15 @@ Solving discrete optimisation problems is difficult because each variable that y
 
 To get around this scale in complexity, many different solving approaches have been taken and are utilised in state of the art solvers today<!--TODO: do I need to cite this?-->. These approaches are in branching and pruning, searching, removing constraints, propagating constraints, decompositions, improving approximations, and so on<!--TODO: citations-->. The field of discrete optimisation is vast. <!--TODO: talk about reference seminal papers on these subsections for further reading-->
 
-In the past decade, research has been done regarding the use of machine learning to improve the methods that solve these problems. The last decade has seen an explosion in Machine Learning research and it has brought along uses in improving the components of these solvers. Machine learning is the process of tuning parameters of a predictive model to find the best fit of those parameters through the training data. These models can used to act as approximate functions for other functions <!--TODO: cite the strong branching paper-->.
+In the past decade, research has been done regarding the use of machine learning to improve the methods that solve these problems<!--TODO: either cut this sentence or the next-->. The last decade has seen an explosion in Machine Learning research and it has brought along uses in improving the efficiency of these solvers<!--TODO: citations-->. Machine learning is the process of tuning parameters of a predictive model to find the best fit of those parameters through the training data. These models can be used to act as approximate functions for other functions<!--TODO: cite the strong branching paper-->.
 
-Research has been done<!--TODO: vague, add references--> that utilizes adaptive strategies and to choose where to branch within the solution spaces of these discrete optimisation problems. 
-Some of these methods use techniques from machine learning to guide the branching, searching, and bounding strategies<!--TODO: what are these?-->.
-So far the studies on these adaptive strategies have not considered learning with respect to the total amount of information that can be extracted from these problems.
+Research has been done<!--TODO: vague, add references--> that utilizes adaptive strategies to choose where to split the solution space of these discrete optimisation problems. 
+Some of these methods use techniques from machine learning to guide the splitting (also called branching) strategies.
+So far, the studies on these adaptive strategies have not considered learning with respect to the total amount of information that can be extracted from these problems.
 
-The Branch and Bound algorithm is a method for solving these problems that splits the solutions by branching on a particular variable at a time.
-In this project we will investigate the amount of information that can be learned about the which variables to branch on
-with and without complete prior knowledge of all feasible solutions in the solution space of a discrete optimisation problem.
+The Branch and Bound <!--TODO: citation--> algorithm is a method for solving these problems that splits the solutions by branching on a particular variable at a time.
+In this project we will investigate the amount of information that can be learned about the which variables to branch on, with and without complete prior knowledge of all feasible solutions in the solution space of a discrete optimisation problem.
 
-However there are limits to how much information can be learned from these problem. In this review, we will explore what kind of learning techniques have been utilised in the field of discrete optimisation and why research needs to be undertaken to explore the bounds of how much information can be learned from these problems.
+However, there are limits to how much information can be learned from these problems. In this review, we will explore what kind of learning techniques have been utilised in the field of discrete optimisation and why research needs to be undertaken to explore the bounds of how much information can be learned from these problems.
 
 In the research following from this review we will explore whether or not there exists information in the feasible solutions that can be exploited by a Branch and Bound tree. We hope that the research inspires new approaches to branching that utilise this information.
