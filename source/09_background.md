@@ -47,14 +47,14 @@ In this respect, information about where the optimal solutions exist would reduc
 
 We refer to uncertainty as the degree to which we would be unable to predict the outcome from a random process.
 Shannon Entropy [@Shannon1948] is an excellent measure for this uncertainty.
-Shannon defines entropy from a discrete process $Y$ as $H = -\sum_{i} p_{i}\log{p_{i}}$, where 
+Shannon defines entropy from a discrete process $Y$ as $$H = -\sum_{i} p_{i}\log{p_{i}}$$, where 
 $p_{i} = \mathbb{P}(Y = y_{i})$ is the probability that the event $y_{i}$ occurs [@Shannon1948]. 
 
-There are many other methods to measure this uncertainty; including Gini, a measure commonly used for income inequality [@Yitzhaki2013]; and metrics that represent the uncertainty in sampling from a continuum like Variance, used to measure the spread of a distribution; Mean Absolute Error, Mean Squared Error and Friedman Mean Squared Error [@Hastie2009].
+There are many other methods to measure this uncertainty; including Gini, a measure commonly used for income inequality [@Yitzhaki2013]; and metrics that represent the uncertainty in sampling from a continuum like variance, used to measure the spread of a distribution; Mean Absolute Error, Mean Squared Error and Friedman Mean Squared Error [@Hastie2009].
 
-Information Gain provides a comparison of the uncertainty before and after splitting on a given variable. Information Gain (denoted $IG$) can be measured using $$IG(Y, x) = I(Y) - \sum_{i} \mathbb{P}(x_{i}) I(Y|x_i),$$
-where $Y$ in our case is the set of objective values,
+Information Gain provides a comparison of the uncertainty before and after splitting on a given variable $x$. Information Gain (denoted $IG$) can be measured using the following formula $$IG(Y, x) = I(Y) - \sum_{i} \mathbb{P}(x_{i}) I(Y|x_i),$$
+where in our case, $Y$ is the set of objective values,
 $I$ the particular criterion (entropy, gini index, etc.) used,
-$x$ is the variable that we are splitting on,
-$x_{i}$ is a unique element of $x$,
-and $P(x_{i})$ the probability of $x_{i}$ occurring in $x$.
+$x$ the variable that we are splitting on,
+$x_{i}$ a possible value of $x$,
+and $\mathbb{P}(x_{i})$ the probability of $x_{i}$ being equal to $x$.
