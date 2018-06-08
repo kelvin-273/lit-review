@@ -15,8 +15,6 @@
 -->
 
 ## Branching
-<!--importance of branching-->
-In the exploration of each node within the Branch and Bound tree, an upper bound (of a maximisation problem) is obtained from the solution of the LP relaxation. If any of the variables within the solutions are fractional, the MIP problem represented by that node is split into two or more smaller sub problems.
 <!--Naive approach-->
 The naive approach to choosing a variable to branch on, as defined in the seminal paper [@Land1960], is to choose the variable whose value from the solved LP relaxation is the furthest from an integer. As shown by [@Achterberg2005], this method can be shown to have worse performance then simply picking a variable to branch on at random.
 Two of the main approaches to branching are *strong branching* and psuedocost branching. 
