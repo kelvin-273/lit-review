@@ -12,9 +12,11 @@ What we hope to happen
 
 \begin{abstract}
 
-In this study we hope to show whether or not it is possible to learn where to find good solutions for combinatorial optimisation problems.
-Many studies have looked at using machine learning as a means of finding better approximations for the components of the algorithms that solve these problems, but so far, no study has considered using feasible solutions to guide the search.% TODO: change this to learning from feasible solutions.
-The proposed research aims at showing how much structural information can be extracted from the solutions space of optimisation problems under total omniscience, and then we will show whether the information can be learned without omniscience.
+In this study we aim to determine whether it is possible to learn where to find good new solutions for combinatorial optimisation problems using a sample set of feasible solutions.
+Although Machine Learning has been used to improve components of discrete optimisation algorithms, none of these approaches use feasible solutions to do so.
+The proposed research aims at quantifying the information that can be extracted from the solution space of optimisation problems.
+Our research starts by considering the case where all solutions are known, in order to determine to what extent optimisation algorithms can be improved in this setup.
+We will evaluate to what extent information from feasible solutions can be exploited by the branching component of Mixed-Integer Programming solvers. 
 
 \end{abstract}
 
